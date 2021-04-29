@@ -1,4 +1,4 @@
-name: 书旗
+name: Alt_S
 on:
   workflow_dispatch:
   #schedule:
@@ -10,14 +10,14 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/caixukun112/js.git ~/js
+          git clone https://github.com/IooTelecom/-.git ~/-
       - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
       - name: npm install
         run: |
-          cd ~/js
+          cd ~/-
           npm install
           npm install cron
           npm install request
@@ -25,8 +25,8 @@ jobs:
 
       - name: '【书旗小说】'
         run: |
-          cd ~/js/Task   
-          node sqxs.js
+          cd ~/-/Scripts   
+          node Alt_S.js
         env:
           ENCRYPT_KEY: ${{ secrets.ENCRYPT_KEY }}
  
