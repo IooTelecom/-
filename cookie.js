@@ -15,7 +15,7 @@ const Count=5
 const DR=0 
 
 //设置1，导出CK
-const DC=0
+const DC=1
 
 //0可批量导入ck,  1清空ck  2单独导入ck
 const QK=0
@@ -86,12 +86,12 @@ const GG=''//默认为换行，也可以将需要隔开的符号填写在''内
 
 //填写你要打印的ck名字，去js里获取ck处看 如$.setdata(refreshtokenVal, "refreshtoken" + $.idx);   则在''中填写refreshtoken
 
-const jsA='refreshtoken'
-const jsB=''
-const jsC=''
-const jsD=''
-const jsE=''
-const jsF=''
+const jsA='readck'
+const jsB='receivecoinck'
+const jsC='vediogoldprizeck'
+const jsD='vediodrawprizeck'
+const jsE='drawck'
+const jsF='userinfock'
 const jsG=''
 const jsH=''
 const jsI=''
@@ -101,11 +101,11 @@ const jsL=''
 
 //开启打印则设置为1
 const jsAA=1  
-const jsBB=0  
-const jsCC=0  
-const jsDD=0  
-const jsEE=0  
-const jsFF=0  
+const jsBB=1  
+const jsCC=1  
+const jsDD=1  
+const jsEE=1  
+const jsFF=1  
 const jsGG=0  
 const jsHH=0  
 const jsII=0  
