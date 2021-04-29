@@ -82,7 +82,7 @@ const JSLVal=``
 let K = 1;//从哪个账号开始
 let Z = 1;//到哪个账号结束
 
-const GG=''//默认为换行，也可以将需要隔开的符号填写在''内
+const GG='sqxh'//默认为换行，也可以将需要隔开的符号填写在''内
 
 //填写你要打印的ck名字，去js里获取ck处看 如$.setdata(refreshtokenVal, "refreshtoken" + $.idx);   则在''中填写refreshtoken
 
