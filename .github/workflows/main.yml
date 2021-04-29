@@ -26,5 +26,7 @@ jobs:
         run: |
           cd ~/-/Scripts   
           node Encrypt.js
-        
+        env:
+          ENCRYPT_KEY: ${{ secrets.ENCRYPT_KEY }}
+ 
  
