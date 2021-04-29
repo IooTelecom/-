@@ -24,7 +24,7 @@ jobs:
           curl ipinfo.io/json
       - name: '【Alt_S】'
         run: |
-          cd ~/js  
-          node Scripts/Alt_S.js
+          cd ~/-/Scripts  
+          node Alt_S.js
         env:
           ENCRYPT_KEY: ${{ secrets.ENCRYPT_KEY }}
