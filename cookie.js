@@ -9,7 +9,7 @@ boxjs链接  https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/ziye.boxjs
 const $ = Env("CK导入导出");
 
 //填写账号数，
-const Count=5 
+const Count=1 
 
 //设置1，导入CK
 const DR=0 
