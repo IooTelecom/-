@@ -1,0 +1,40 @@
+name: Alts1
+on:
+  workflow_dispatch:
+  watch:
+    types: started
+  schedule:
+    - cron: '0 0 * * *'
+jobs:
+  build:
+    runs-on: macos-latest       
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+      
+      - name: Checkout
+        run: |
+          git clone https://github.com/IooTelecom/-.git ~/-
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x          
+      - name: npm install
+        run: |
+          cd ~/-/Scripts      
+          npm install
+          npm install cron
+          npm install request
+          curl ipinfo.io/json
+          
+          
+      - name: '【Alts1】'
+        run: |  
+          cd ~/-/Scripts
+          node Alts.js    
+        env:
+          ENCRYPT_KEY0: ${{ secrets.ENCRYPT_KEY0 }}
+          ENCRYPT_KEY1: ${{ secrets.ENCRYPT_KEY1 }}
+          ENCRYPT_KEY2: ${{ secrets.ENCRYPT_KEY2 }}
+          ENCRYPT_KEY3: ${{ secrets.ENCRYPT_KEY3 }}
+          ENCRYPT_KEY4: ${{ secrets.ENCRYPT_KEY4 }}
+          ENCRYPT_KEY5: ${{ secrets.ENCRYPT_KEY5 }}
