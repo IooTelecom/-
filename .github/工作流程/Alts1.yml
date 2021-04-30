@@ -32,4 +32,9 @@ jobs:
           cd ~/-/Scripts
           node Alts.js    
         env:
-          ENCRYPT_KEY: ${{ secrets.ENCRYPT_KEY }}
+          ENCRYPT_KEY0: ${{ secrets.ENCRYPT_KEY0 }}
+          ENCRYPT_KEY1: ${{ secrets.ENCRYPT_KEY1 }}
+          ENCRYPT_KEY2: ${{ secrets.ENCRYPT_KEY2 }}
+          ENCRYPT_KEY3: ${{ secrets.ENCRYPT_KEY3 }}
+          ENCRYPT_KEY4: ${{ secrets.ENCRYPT_KEY4 }}
+          ENCRYPT_KEY5: ${{ secrets.ENCRYPT_KEY5 }}
